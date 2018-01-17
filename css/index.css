@@ -1,0 +1,81 @@
+/*全局样式*/
+body{
+	font-size: 12px;
+	font-family: "arial, helvetica, sans-serif";
+	color: #555;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: #555555;
+}
+li{
+	list-style: none;
+}
+i,em,button,input,textarea{
+	outline: none;
+}
+/*页面框架*/
+.container{
+	max-width: 450px;
+	height: auto;
+	margin: auto;
+}
+
+/*底部菜单*/
+.container-menu{
+	width:100%;
+	height:50px;
+	background: #612273;
+	position: fixed;
+	bottom: 0;
+}
+/*顶部消息通知*/
+.container-top{
+	width:90%;
+	height:30px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	padding: 0 5%;
+	line-height: 30px;
+}
+.container-top img{
+	width: auto;
+	height: 90%;
+	float: left;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+.container-top p{
+	float: left;
+	font-size: 10px;
+	margin-right: 10px;
+}
+.container-top span{
+	float: left;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background: #dec4ab;
+	color:#000;
+	font-size: 10px;
+	margin-top: 5px;
+}
+/*页面主体*/
+.container-main{
+	width: 90%;
+	height: 1000px;
+	border-bottom: solid #612273 1px;
+	border-top: solid #612273 1px;
+	margin: 30px 0px 55px 0px;
+	padding: 0 5%;
+}
