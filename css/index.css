@@ -11,6 +11,10 @@ body{
 a{
 	text-decoration: none;
 	color: #555555;
+	-webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+
 }
 li{
 	list-style: none;
@@ -112,9 +116,9 @@ i,em,button,input,textarea{
 	font-size: 10px;
 	margin-right: 10px;
 }
-.container-top span{
+#container-top-news{
 	float: left;
-	width: 80px;
+	width: 100px;
 	height: 20px;
 	line-height: 20px;
 	text-align: left;
@@ -126,7 +130,9 @@ i,em,button,input,textarea{
 	color:#000;
 	font-size: 10px;
 	margin-top: 5px;
+	padding: 0 5px;
 }
+
 /*页面主体*/
 .container-main{
 	width: 100%;
@@ -160,18 +166,26 @@ i,em,button,input,textarea{
 	font-size: 9px;
 }
 .container-International{
-	width: 80%;
+	width: 100%;
 	height: 140px;
-	padding: 0 10%;
 	overflow: hidden;
 }
 .container-International ul{
-	width: 100%;
+	width: auto;
 	height: 100%;
+	position: relative;
+	transition: 0.4s;
 }
 .container-International ul li{
-	width: 100%;
+	width: auto;
 	height: 100%;
+	float: left;
+}
+.container-International-parent{
+	width: 80%;
+	height: auto;
+	margin: 0 10%;
+	margin: auto;
 	background: #FFFFFF;
 }
 .container-International-info{
@@ -367,6 +381,18 @@ i,em,button,input,textarea{
 	color: #FFFFFF;
 	text-align: center;
 }
+.container-diary-picture-after2:after{
+	content:"after";
+	right: 0;
+	top: 0;
+	width: 40px;
+	padding: 0px 2px;
+	position: absolute;
+	background: #8501cf;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+}
 .container-diary-picture-after img{
 	width: 100%;
 	height: 100%;
@@ -542,6 +568,7 @@ i,em,button,input,textarea{
 	float: left;
 	margin-top: 60px;
 	margin-left: 30px;
+	display: none;
 }
 .container-advisory img:last-child{
 	width: 180px;
@@ -549,19 +576,19 @@ i,em,button,input,textarea{
 	float: left;
 	margin-top: 70px;
 	margin-left: 10px;
+	display: none;
 }
 .container-KeyWords{
 	width: 100%;
-	height: 150px;
+	height: auto;
 	background: url(../img/icon06.png) no-repeat center top;
 	background-size:100% auto ;
 	background-color: #FFFFFF;
 	text-align: center
 }
-.container-KeyWords a{
-	font-size: 14px;
-	color: #612273;
-	margin: 10px 30px;
+.container-KeyWords img{
+	width: 100%;
+	height: auto;	
 }
 .container-bg{
 	width: 100%;
@@ -575,4 +602,102 @@ i,em,button,input,textarea{
 .container-footer img{
 	width: 100%;
 	height: auto;
+}
+.container-item{
+	width: 94%;
+	padding: 20px 3%;
+	height: auto;
+	background: #e7e7e7;
+	
+}
+.container-item-box{
+	box-shadow: 0 3px 10px #AAAAAA;
+}
+.container-item-picture{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.container-item-picture img{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.container-item-content{
+	width: 50%;
+	float: left;
+	height: 100%;
+	background: #FFFFFF;
+	padding-bottom: 10px;
+}
+.container-item-content p{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 10px;
+}
+.container-item-content h4{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: solid #737373 1px;
+	margin-bottom: 10px;
+}
+.container-item-content a{
+	display:block;
+	text-align: center;
+	font-size: 9px;
+	width: 90px;
+	height: 31px;
+	margin: auto;
+	line-height: 27px;
+	background: url(../img/icon07.png) no-repeat center top;
+	background-size:100% 100% ;
+}
+.container-Advantage{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-bottom: 70px;
+}
+.container-Advantage ul{
+	position: absolute;
+	top: -25px;
+	
+}
+.container-Advantage ul li{
+	width: 25%;
+	float: left;
+	height: auto;
+}
+.container-Advantage ul li{
+	width: 68px;
+	float: left;
+	height: 68px;
+	margin: 0 4px;
+	padding: 3px;
+	background: #fae9ff;
+	border-radius:50% ;
+	box-shadow: 0px 5px 10px #999;
+}
+.container-Advantage-item{
+	width: 62px;
+	height: 62px;
+	border: solid #FFFFFF 2.5px;
+	border-radius:50% ;
+}
+.container-Advantage-item a{
+	display: block;
+	font-size: 11px;
+	color: #ff0066;
+	text-align: center;
+	margin-top: 10px;
+}
+.container-Advantage-item p{
+	display: block;
+	font-size: 9px;
+	color: #000;
+	text-align: center;
 }
