@@ -10,5 +10,10 @@ window.onscroll=function(){
 	}
 }
 window.onload=function(){
+	var International=document.getElementById("container-International");
+	var InternationalItem=International.getElementsByTagName("li");
+	for(var i=0;i<InternationalItem.length;i++){
+		InternationalItem[i].style.width=document.body.clientWidth+"px";
+	}
 	
 }
